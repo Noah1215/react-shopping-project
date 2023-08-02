@@ -14,10 +14,6 @@ const firebaseConfig = {
   authDomain: "snoppy-69dad.firebaseapp.com",
   databaseURL: "https://snoppy-69dad-default-rtdb.firebaseio.com",
   projectId: "snoppy-69dad",
-  storageBucket: "snoppy-69dad.appspot.com",
-  messagingSenderId: "707830141203",
-  appId: "1:707830141203:web:eb1d41644cb63d8562cae6",
-  measurementId: "G-MT9S55LPNK",
 };
 
 const app = initializeApp(firebaseConfig);
