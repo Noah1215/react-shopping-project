@@ -54,8 +54,18 @@ export async function addNewProduct(product, imgUrl) {
   return set(ref(database, `products/${id}`), {
     ...product,
     id,
-    price: parseInt(product.price),
+    price: parseFloat(product.price),
     image: imgUrl,
     options: product.options.split(","),
+  });
+}
+
+export async function getProducts() {
+  return get(ref(database, "products")).then((snapshot) => {
+    if (snapshot.exists()) {
+      return Object.values(snapshot.val());
+    }
+
+    return [];
   });
 }
