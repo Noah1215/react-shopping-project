@@ -104,6 +104,9 @@ const NewProduct = () => {
           text={isUploading ? "Uploading..." : "Register"}
           disabled={isUploading}
         />
+        {success && (
+          <p className="mt-2 text-2xl font-bold text-brand">{success}</p>
+        )}
       </form>
     </section>
   );
