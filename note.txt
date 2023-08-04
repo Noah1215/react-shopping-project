@@ -1,0 +1,27 @@
+!! What I learned !! 
+
+1. useQuery
+(https://tanstack.com/query/v4/docs/react/reference/useQuery)
+- It is a React library that handles state management by providing some hooks for updating, fetching and caching asynchronous data in React. 
+- set 'key' and 'queryFn' => after fetching, all data will be contained in 'key'.
+
+2. useMutation
+(https://tanstack.com/query/v4/docs/react/reference/useMutation)
+- It is used to mutate data.
+- It allows to easily perform mutations or write operations on data, such as creating, updating, or deleting records, and handles the state management and caching logic.
+
+3. Outlet
+(https://reactrouter.com/en/main/components/outlet)
+- An <Outlet> should be used in parent route elements to render their child route elements.
+- This allows nested UI to show up when child routes are rendered.
+
+4. createBrowserRouter
+(https://reactrouter.com/en/main/routers/create-browser-router)
+- It defines custom route using path, element.
+
+5. useNavigate
+(https://reactrouter.com/en/main/hooks/use-navigate)
+- The useNavigate hook returns a function that lets users navigate programmatically.
+- i.e) navigate(`/products/${id}`)
+- 
+
